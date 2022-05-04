@@ -2,12 +2,12 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   labels:
-    app: argocdrocks
-  name: argocdrocks-app
+    app: argocd
+  name: argocd-app
 spec:
-  project: argocdrocks-project
+  project: argocd-project
   source:
-    repoURL: https://github.com/sokube/argocd-rocks.git
+    repoURL: git@github.com:rosvali/raguillo-argocd.git
     targetRevision: featurebranch_1
     path: app
     directory:
