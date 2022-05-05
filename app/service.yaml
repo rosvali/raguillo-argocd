@@ -5,12 +5,12 @@ metadata:
 spec:
  ports:
  - port: 80
-  name: http
-  protocol: TCP
-  targetPort: 8080
-  nodePort: 8888
+   name: http
+   protocol: TCP
+   targetPort: 8080
+   nodePort: 8888
  selector:
-  app: wil-playground
+   app: wil-playground
  type: NodePort
 
 # apiVersion: v1
